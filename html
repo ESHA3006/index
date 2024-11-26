@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDB Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ccc; 
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.sign-in {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: #555;
+}
+
+
+</style>
+<body>
+  <nav class="navbar">
+    <div class="logo">MDB</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="fa-solid fa-circle-plus">Post</a></li>
+      <li><a href="fa-solid fa-bell">Alerts</a></li>
+      <li><a href="fa-solid fa-hear">Trips</a></li>
+      <li><button class="sign-in">Sign In</button></li>
+    </ul>
+      </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
